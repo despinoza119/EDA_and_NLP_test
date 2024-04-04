@@ -30,13 +30,19 @@ async def chat_to_summarize(text_combined):
     )
 
     prompt = """
-    1. You are a writer that will create a summary based on the data that is being provided
-    2. You have to return a summary that is easy to understand and that is not too long
-    3. Put a general Title to know the topic of the summary
-    4. Put subtitles to separate the different sections of the summary, leave lines between the subtitles and the text
+    Context:
+    You are a writer tasked with creating a clear and concise text summary based on the provided information. Your goal is to divide the summary into sections with titles and subtitles to facilitate reader understanding, and provide a text summary after each subtitle.
 
-    {{$history}}
-    Data Provided to realize the summary: {{$user_input}}
+    Rules:
+
+    1.The summary must have a general title describing the main topic.
+    2.You should separate the summary into sections with subtitles addressing different topics within the provided content.
+    3.After each subtitle, provide a text summary that elaborates on the information related to that subtitle.
+    4.There should be blank lines between each subtitle, its corresponding text summary, and the next subtitle to enhance readability and clarity of the summary.
+    5.The text summary should be easy to understand and not overly lengthy, maintaining conciseness and relevance in each section.
+
+    Given the following information, generate a structured text summary with titles, subtitles, and corresponding text summaries according to the provided rules.
+    {{$user_input}}
      """
 
     execution_settings = sk_oai.OpenAIChatPromptExecutionSettings(

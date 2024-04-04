@@ -1,13 +1,19 @@
 import os
 import requests
+import fitz  # !pip install PyMuPDF
+from tqdm.auto import tqdm  # !pip install tqdm
 
 def download_pdf_file():
+    """
+    Description: Downloads a PDF file from a specified URL and saves it locally.
+    """
+
     # Get PDF document path
     pdf_path = "../data/raw/human-nutrition-text.pdf"
 
     # Download
     if not os.path.exists(pdf_path):
-        print(f"[INFO] File doesn't exist, downloading...")
+        print("[INFO] File doesn't exist, downloading...")
 
         # Enter the URL of the PDF
         url="https://pressbooks.oer.hawaii.edu/humannutrition2/open/download?type=pdf"
@@ -29,16 +35,18 @@ def download_pdf_file():
     else:
         print(f"File {pdf_path} exists.")
 
-import fitz  # !pip install PyMuPDF
-from tqdm.auto import tqdm  # !pip install tqdm
 
 def text_formatter(text: str) -> str:
-    """Performs minor formatting on text."""
+    """
+    Description: Performs minor formatting on text.
+    """
     cleaned_text = text.replace("\n", " ").strip()
-    # Potentially more text formatting functions can go here
     return cleaned_text
 
 def open_and_read_pdf(pdf_path: str) -> list[dict]:
+    """
+    Description: Opens a PDF and safe data in a variable.
+    """
     doc = fitz.open(pdf_path)
     pages_and_texts = []
     for page_number, page in tqdm(enumerate(doc)):
@@ -55,6 +63,9 @@ def open_and_read_pdf(pdf_path: str) -> list[dict]:
     return pages_and_texts
 
 def select_example_pages(pages_and_texts,selected_page_numbers):
+    """
+    Description: Selects example pages from a list of page information based on specified page numbers.
+    """
     selected_pages = []
 
     for page_info in pages_and_texts:
