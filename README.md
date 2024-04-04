@@ -9,5 +9,7 @@
 Environmental variables you need in .env :
 
 AZURE_DEPLOYMENT=
+
 AZURE_API_KEY=
+
 AZURE_ENDPOINT=
