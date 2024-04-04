@@ -6,9 +6,14 @@ The project consists of a Jupyter notebook where a classification algorithm is d
 ## Setup Instructions
 1. Clone the Repository:
 
-```git clone https://github.com/despinoza119/EDA_and_NLP_test.git```
+``` git clone https://github.com/despinoza119/EDA_and_NLP_test.git ```
+
+```html
+<button onclick="copyToClipboard()">Copiar Texto</button>
+```
 
 2. Define the necessary environment variables:
+
 AZURE_DEPLOYMENT=
 
 AZURE_API_KEY=
