@@ -26,3 +26,6 @@ AZURE_ENDPOINT=
 5. To visualize the app go to: http://localhost:8501 :
 
 ```http://localhost:8501```
+
+## Image of application
+![Sample Image](app.png)
