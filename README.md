@@ -18,18 +18,18 @@ The project consists of a Jupyter notebook where a classification algorithm is d
 
 3. Build the docker image:
     ```html
-        docker build -t nlp_test .
-        ```
+    docker build -t nlp_test .
+    ```
 
 4. Run the docker image builded:
     ```html
-        docker run -p 8501:8501 nlp_test
-        ```
+    docker run -p 8501:8501 nlp_test
+    ```
 
 5. To visualize the app go to: http://localhost:8501 :
     ```html
-        http://localhost:8501
-        ```
+    http://localhost:8501
+    ```
 
 ## Image of application
 ![Sample Image](app.png)
