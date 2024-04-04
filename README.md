@@ -15,18 +15,21 @@ The project consists of a Jupyter notebook where a classification algorithm is d
     AZURE_API_KEY=
     AZURE_ENDPOINT=
     ```
-    
-3. Build the docker image:
 
-```docker build -t nlp_test .```
+3. Build the docker image:
+    ```html
+        docker build -t nlp_test .
+        ```
 
 4. Run the docker image builded:
-
-```docker run -p 8501:8501 nlp_test```
+    ```html
+        docker run -p 8501:8501 nlp_test
+        ```
 
 5. To visualize the app go to: http://localhost:8501 :
-
-```http://localhost:8501```
+    ```html
+        http://localhost:8501
+        ```
 
 ## Image of application
 ![Sample Image](app.png)
