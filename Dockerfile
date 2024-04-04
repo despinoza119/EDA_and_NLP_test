@@ -9,8 +9,8 @@ COPY ./ /usr/src/app
 
 RUN poetry install
 
-WORKDIR /usr/src/app/bdi_api
+WORKDIR /usr/src/app/project
 
-EXPOSE 8000
+EXPOSE 8501
 
-CMD [ "poetry", "run", "uvicorn", "bdi_api.app:app", "--host", "0.0.0.0"]
+CMD [ "poetry", "run", "streamlit", "run", "app.py"]
