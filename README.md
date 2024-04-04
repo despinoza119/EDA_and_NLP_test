@@ -20,6 +20,7 @@ AZURE_ENDPOINT=
 ```docker build -t nlp_test .```
 
 4. Run the docker image builded:
+
 ```docker run -p 8501:8501 nlp_test```
 
 5. To visualize the app go to: http://localhost:8501 :
