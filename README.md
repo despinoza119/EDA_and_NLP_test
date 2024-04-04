@@ -10,13 +10,12 @@ The project consists of a Jupyter notebook where a classification algorithm is d
     ```
 
 2. Define the necessary environment variables:
-
-AZURE_DEPLOYMENT=
-
-AZURE_API_KEY=
-
-AZURE_ENDPOINT=
-
+    ```html
+    AZURE_DEPLOYMENT=
+    AZURE_API_KEY=
+    AZURE_ENDPOINT=
+    ```
+    
 3. Build the docker image:
 
 ```docker build -t nlp_test .```
