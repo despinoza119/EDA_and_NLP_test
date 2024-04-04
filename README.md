@@ -2,6 +2,9 @@
 
 ## Overview
 The project consists of a Jupyter notebook where a classification algorithm is developed to determine the quality of wine based on certain wine characteristics. Additionally, an application is built where the user can obtain a summary according to the pages assigned from the following nutrition book: https://pressbooks.oer.hawaii.edu/humannutrition2/ 
+<p align="center">
+  <img src="app.png" alt="Sample Image" width="300">
+</p>
 
 ## Setup Instructions
 1. Clone the Repository:
@@ -26,7 +29,7 @@ The project consists of a Jupyter notebook where a classification algorithm is d
     docker run -p 8501:8501 nlp_test
     ```
 
-5. To visualize the app go to: http://localhost:8501 :
+5. To visualize the app go to http://localhost:8501 :
     ```html
     http://localhost:8501
     ```
