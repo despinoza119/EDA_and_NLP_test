@@ -9,7 +9,7 @@ The project consists of a Jupyter notebook where a classification algorithm is d
 ``` git clone https://github.com/despinoza119/EDA_and_NLP_test.git ```
 
 ```html
-<button onclick="copyToClipboard()">Copiar Texto</button>
+git clone https://github.com/despinoza119/EDA_and_NLP_test.git
 ```
 
 2. Define the necessary environment variables:
