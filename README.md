@@ -36,5 +36,10 @@ The project consists of a Jupyter notebook where a classification algorithm is d
     http://localhost:8501
     ```
 
-## Image of application
-![Sample Image](app.png)
+## Documentation
+For more detailed information about the project overview, data model, and specific components, refer to the docs directory.
+
+- **internship-test**: Instructions for building the project.
+
+## License
+MIT License
