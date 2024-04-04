@@ -3,7 +3,7 @@
 ## Overview
 The project consists of a Jupyter notebook where a classification algorithm is developed to determine the quality of wine based on certain wine characteristics. Additionally, an application is built where the user can obtain a summary according to the pages assigned from the following nutrition book: https://pressbooks.oer.hawaii.edu/humannutrition2/ 
 <p align="center">
-  <img src="app.png" alt="Sample Image" width="300">
+  <img src="app.png" alt="Sample Image" width="600">
 </p>
 
 ## Setup Instructions
